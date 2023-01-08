@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    height: 100%;
+    font-size: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main, footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+h1{
+    cursor: pointer;
+    font-size: 80px;
+}
+.kiri{
+    background-color: #1E1E1E;
+}
+.kanan{
+    background-color: #57575a;
+}
+.angkan{
+    position: absolute;
+    top: 35%;
+    left:70%;
+}
+.angki{
+    position: absolute;
+    top: 35%;
+    left:20%;
+}
+.pkiri>.pe{
+    display: flex;
+}
+.pkanan>.pe{
+   display: flex;
+   flex-direction: row-reverse;
+}
+#rl{
+    width: 10%;
+}
+#nama{
+    width: 90%;
+}
+.pe>#nama{
+    background-color: #3c3c3c;
+    color: antiquewhite;
+}
+.pe>#rl{
+    background-color: #FFD600;
+    text-align: center;
+}
+.pkanan>.pe>#nama{
+    background-color: #3c3c3c;
+    text-align: right;
+}
+#rl,#nama{
+   padding:10px
+}
+footer{
+    margin: 0;
+    font-size: 15px;
+}
+@media(max-width:468px){  
+    footer{
+        font-size: 10px;     
+    }
+    #rl{
+        width: 15%;
+    }
+    #ama{
+        width: 85%;
+    }
+    .angkan,.angki{
+        top: 40% ;
+    }
+    .angkan{ 
+        left:20%;
+    }  
+}
+@media only screen 
+  and (max-device-width: 868px)
+  and (orientation: landscape) {
+    .angkan,.angki{
+        top: 22%;
+    }
+    footer{
+        font-size: 10px;      
+    }
+    .angki{
+        left:20%;
+    }
+}
